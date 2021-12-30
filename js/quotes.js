@@ -44,6 +44,12 @@ const quotes = [
     const quote = document.querySelector("#quoto span:first-child");
     const author = document.querySelector("#quoto span:last-child");
 
-    console.log(quotes[1]);
+    const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
+
+    quote.innerText = todaysQuote.quote;
+    author.innerText = todaysQuote.author;
 
     //Math.random() * 10 
+    //Math.round(1.5) round는 반올림을 해준다
+    //Math.ceil(1.01)는 올림을 해준다
+    //Math.floor(1.01)는 버림을 해준다
