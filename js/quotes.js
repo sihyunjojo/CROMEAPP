@@ -46,8 +46,8 @@ const quotes = [
 
     const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)]
 
-    quote.innerText = todaysQuote.quote;
-    author.innerText = todaysQuote.author;
+    quote.innerText = `명언: ${todaysQuote.quote}`;
+    author.innerText = `위인: ${todaysQuote.author}`;
 
     //Math.random() * 10 
     //Math.round(1.5) round는 반올림을 해준다

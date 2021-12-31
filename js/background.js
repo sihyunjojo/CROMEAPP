@@ -10,9 +10,7 @@ const images = [
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 //img태그를 생성시켜서 변수로
-const bgImage = document.createElement("img");
+const bgImage = `url('img/${chosenImage}')`;
 
-bgImage.src = `img/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+document.body.style.backgroundImage = bgImage;
 //appendChild는 body에 html을 추가하는 것이다.

@@ -11,10 +11,13 @@ function onGeoOk(position) {
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
-            const weather = document.querySelector('#weather span:first-child');
-            const city = document.querySelector('#weather span:last-child');
-            city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} /${data.main.temp}`;
+            const city = document.querySelector('#weather span:first-child');
+            const temp = document.querySelector('#weather span:nth-child(3)');
+            const weather = document.querySelector('#weather span:last-child');
+            city.innerText = `위치 : ${data.name}`;
+            weather.innerText = `날씨 : ${data.weather[0].main} `;
+            temp.innerText = `온도 : ${data.main.temp}`;
+            
         }); //fetch를 통해서 url을 얻을 거고 부를거다 // 얻었으면 js에게 알려줘야한다.
         //then은 서버의 응답이 5분이라면 그 5분이후에 올 응답을 기다려야해서 then을 써줘야함
 
