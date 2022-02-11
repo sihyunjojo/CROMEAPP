@@ -22,7 +22,7 @@
     height: 100%;
 
     background-color: rgba(16, 16, 16, 0.5);
-    z-index: 1; /*  z 인덱스는 숫자를 통해서 뒤로 미뤄준다? (예를 들어 z인덱스 1은 z 인덱스 2의 뒤에 있는다.) */
+    z-index: 1; /* z 인덱스는 숫자를 통해서 뒤로 미뤄준다?(예를 들어 z인덱스 1은 z 인덱스 2의 뒤에 있는다.) */
 }
 
 body{
@@ -45,7 +45,7 @@ input[type=submit]{
 
 #login-form{
     position: absolute;
-    top: 22%;
+    top: 21%;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -131,7 +131,7 @@ input[type=submit]{
 #weather{
     position: absolute;
     top: 15%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%,-50%);
 
     text-align: center;
